@@ -45,15 +45,24 @@ Also in the code above, we create a `Cat` instance named `bryceCat`. Because bry
 console.log(bryceCat.name);
 ```
 
-Since the extends keyword brings all of the parent’s getters and methods into the child class, bryceCat.name accesses the name getter and returns the value saved to the name property.
+Since the `extends` keyword brings all of the parent’s getters and methods into the child class, `bryceCat.name` accesses the `name` getter and returns the value saved to the `name` property.
 
 Now consider a more involved example and try to answer the following question: What will the code below log to the console?
 
-bryceCat.incrementBehavior(); // Call .incrementBehavior() on Cat instance 
-console.log(bryceCat.behavior); // Log value saved to behavior
-The correct answer is 1. But why?
+```
+bryceCat.incrementBehavior(); 
+// Call .incrementBehavior() on Cat instance 
+console.log(bryceCat.behavior); 
+// Log value saved to behavior
+```
 
-The Cat class inherits the _behavior property, behavior getter, and the .incrementBehavior() method from the Animal class.
-When we created the bryceCat instance, the Animal constructor set the _behavior property to zero.
-The first line of code calls the inherited .incrementBehavior() method, which increases the bryceCat _behavior value from zero to one.
-The second line of code calls the behavior getter and logs the value saved to _behavior (1).
+The correct answer is `1`. But why?
+
+- The `Cat` class inherits the `_behavior` property, `behavior` getter, and the `.incrementBehavior()` method from the `Animal` class.
+  
+- When we created the `bryceCat` instance, the `Animal` constructor set the `_behavior` property to zero.
+  
+- The first line of code calls the inherited `.incrementBehavior()` method, which increases the `bryceCat _behavior` value from zero to one.
+  
+- 
+- The second line of code calls the `behavior` getter and logs the value saved to `_behavior (1)`.
