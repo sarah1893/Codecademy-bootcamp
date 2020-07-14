@@ -22,8 +22,9 @@ We now have the entire behavior of `Menu` available in **order.js**. Here, we no
 
 2. `require()` is a JavaScript function that loads a module. It’s argument is the file path of the module: `./menu.js`. With `require()`, the `.js` extension is optional and will be assumed if it is not included.
 
-3. The `placeOrder()` function then uses the Menu module. By calling Menu.specialty, we access the property specialty defined in the Menu module.
+3. The `placeOrder()` function then uses the `Menu` module. By calling `Menu.specialty`, we access the property `specialty` defined in the `Menu` module.
+
 Taking a closer look, the pattern to import a module is:
 
-Import the module with require() and assign it to a local variable.
-Use the module and its properties within a program.
+1. Import the module with `require()` and assign it to a local variable.
+2. Use the module and its properties within a program.
